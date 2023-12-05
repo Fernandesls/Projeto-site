@@ -1,0 +1,332 @@
+/* Aplicado a todos*/
+
+h1 {
+  font-size: 3em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #45a049;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #555;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card-sm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Pagina Inicial*/
+
+.card-Inicial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.ImportanciaNatureza {
+  flex: 1 1 100%; /* Alterado para ocupar 100% da largura em telas menores */
+  margin: 5px;
+  border: 3px solid #ddd;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.Banner {
+  width: 100%;
+  height: auto;
+  text-align: center; /* Centraliza a imagem */
+}
+
+.Banner img {
+  max-width: 100%; /* Ajusta a largura máxima da imagem para ser responsiva */
+}
+
+.Texto-PaginaInicial {
+  margin-top: 10px; /* Adiciona margem superior para separar o texto da imagem */
+  font-size: 20px;
+}
+
+/* Fauna */
+
+.Imagem-Fauna {
+  margin-left: 10px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.Legenda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.Animais {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.Texto-Fauna1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.Texto-Fauna2 {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Flora */
+
+.Titulo-lista {
+  font-size: 20px;
+}
+
+.Titulo-lista-beneficios {
+  padding: 20px;
+}
+
+.Lista-ordenada {
+  font-size: 20px;
+}
+
+.Lista-beneficios {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.Plantas {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  height: auto;
+}
+
+/*Ecossistemas */
+
+.img-ecossistema {
+  max-width: 500px;
+  width: 100%;
+}
+
+.Texto-Ecossistema {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Texto-acimadovideo {
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .Texto-Ecossistema {
+    font-size: 16px;
+  }
+
+  .video {
+    padding: 10px;
+  }
+
+  .Texto-acimadovideo {
+    font-size: 14px;
+  }
+}
+
+/* Sustentabilidade*/
+
+.Texto-Sustentabilidade p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.Texto-Sustentabilidade ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.Texto-Sustentabilidade li {
+  margin-bottom: 5px;
+}
+
+.Icones {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+
+/*Contato */
+
+.Texto-acimaformulario {
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.Formulário {
+  background-color: #45a049;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .Formulário {
+    padding: 15px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 10px;
+  }
+
+  .redes-sociais {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redes-sociais a {
+    margin: 10px 0;
+  }
+
+  .Icones {
+    gap: 10px;
+  }
+}
+
+.img-sustentabilidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ddd; /* Adapte a espessura e a cor da borda conforme necessário */
+  padding: 10px; /* Adapte o preenchimento conforme necessário */
+}
+
+.img-sustentabilidade img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Footer */
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.Icones {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  font-size: 30px;
+  color: white;
+}
